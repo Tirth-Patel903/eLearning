@@ -1,0 +1,57 @@
+<%@ Master Language="VB" CodeFile="UserMasterPage.master.vb" Inherits="UserMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>PlusBusiness</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="layout/scripts/jquery.jcarousel.pack.js"></script>
+<script type="text/javascript" src="layout/scripts/jquery.jcarousel.setup.js"></script>
+</head>
+<body id="top">
+    <form id="form1" runat="server">
+<!-- ####################################################################################################### -->
+<div class="wrapper col1">
+  <div id="header">
+    <div id="logo">
+      <h1><a href="AHome.aspx">+E-learning</a></h1>
+      <p>Snacks House<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        </p>
+    </div>
+    <div id="topnav">
+      <ul>
+        <li class="active"><a href="Home.aspx">Home</a></li>
+        <li><a href="material.aspx">Material</a></li>
+         <li><a href="AboutUs.aspx">AboutUs</a>
+          </li>
+           <li><a href="AdminLogin.aspx">Logout</a></li>
+        <li class="last"><a href="ContactUs.aspx">ContactUs</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</div>
+<!-- ####################################################################################################### -->
+<!-- ####################################################################################################### -->
+<div class="wrapper col4">
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col5">
+  <div id="copyright">
+    <p class="fl_left">Copyright © 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">
+        OS Templates</a></p>
+    <br class="clear" />
+  </div>
+</div>
+    </form>
+</body>
+</html>
